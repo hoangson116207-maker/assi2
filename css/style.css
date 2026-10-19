@@ -1,0 +1,172 @@
+/* --- RESET & BOX MODEL CHUẨN --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Tone màu tối Gaming/Tech hiện đại */
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+/* --- HEADER & NAVBAR (FLEXBOX) --- */
+header {
+    background-color: #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.logo a {
+    color: #00adb5;
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #00adb5;
+}
+
+/* Nút Giỏ hàng trên Menu */
+.cart-btn-nav {
+    background: #00adb5;
+    color: white !important;
+    padding: 7px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+/* --- HERO BANNER --- */
+.hero-banner {
+    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
+                url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80') center/cover;
+    text-align: center;
+    padding: 90px 20px;
+    border-bottom: 2px solid #334155;
+}
+
+.hero-banner h1 {
+    font-size: 40px;
+    color: #38bdf8;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.hero-banner p {
+    font-size: 18px;
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #00adb5;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #02878e;
+}
+
+/* --- KHỐI CAM KẾT DỊCH VỤ --- */
+.features-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feature-card {
+    background: #1e293b;
+    padding: 25px 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    border: 1px solid #334155;
+}
+
+.feature-card h3 {
+    color: #38bdf8;
+    margin-bottom: 8px;
+}
+
+/* --- DANH MỤC CHÍNH 01, 02, 03 --- */
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 28px;
+    color: #f1f5f9;
+}
+
+.category-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.category-card {
+    background: #1e293b;
+    flex: 1;
+    padding: 30px 20px;
+    border-radius: 8px;
+    border-left: 5px solid #00adb5;
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00adb5;
+}
